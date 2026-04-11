@@ -35,3 +35,7 @@ nav a.current {
 /* html{
   accent-color: var(--color-accent)
 } */
+
+nav a:hover {
+  border-bottom: 0.4em solid var(--color-accent);
+}

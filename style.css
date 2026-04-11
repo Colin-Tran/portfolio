@@ -39,27 +39,15 @@ nav a:hover {
 
 label {
   display: block;
-  margin-bottom: 0.5em;
+  margin-block: 1em;
 }
 
-input{
-  font: inherit;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-textarea{
-  font: inherit;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-}
-
+input,
+textarea,
 button {
   font: inherit;
   display: block;
   width: 100%;
   box-sizing: border-box;
-
+  padding: 0.5em;
 }

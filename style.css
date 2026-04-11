@@ -6,7 +6,7 @@ body {
   max-width: 100ch;
   margin-inline: auto;
   padding: 4em;
-  accent-color: var(--color-accent)
+  accent-color: var(--color-accent);
 }
 
 nav {
@@ -32,10 +32,7 @@ nav a.current {
   --color-accent: oklch(65% 50% 0)
 }
 
-/* html{
-  accent-color: var(--color-accent)
-} */
-
 nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
+  background-color: oklch(from var(--color-accent) 95% 5% h);
 }

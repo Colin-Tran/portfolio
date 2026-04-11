@@ -65,6 +65,7 @@ button{
 }
 
 article {
+  display: grid;
   grid-template-rows: subgrid;
   grid-row: span 3;
   gap: 1em;

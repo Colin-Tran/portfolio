@@ -36,3 +36,30 @@ nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
   background-color: oklch(from var(--color-accent) 95% 5% h);
 }
+
+label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+input{
+  font: inherit;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea{
+  font: inherit;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+
+}

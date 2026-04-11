@@ -3,9 +3,10 @@ body {
 	   and use the OS’s UI font as the website font
 	 */ 
   font: 100%/1.5 system-ui;
-  max-width: 200ch;
+  max-width: 100ch;
   margin-inline: auto;
   padding: 4em;
+  accent-color: var(--color-accent)
 }
 
 nav {
@@ -26,3 +27,11 @@ nav a.current {
   border-bottom: 0.4em solid oklch(80% 3% 200);
   padding-bottom: 0.2em;
 }                                
+
+:root{
+  --color-accent: oklch(65% 50% 0)
+}
+
+/* html{
+  accent-color: var(--color-accent)
+} */

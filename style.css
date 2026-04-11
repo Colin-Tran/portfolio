@@ -91,3 +91,29 @@ h6 {
 .projects h2 {
   margin: 0;
 }
+
+
+.resume img {
+  border-radius: 12px;
+}
+
+.resume section {
+  margin-block: 1em;
+}
+
+.resume section h2 {
+  border-bottom: 2px solid oklch(80% 3% 200);
+  padding-bottom: 0.5em;
+  margin-bottom: 0.75em;
+}
+
+.resume article {
+  margin-block: 1em;
+}
+
+.resume time {
+  color: #4b4444;
+  font-size: 1em;
+  display: block;
+  margin-bottom: 0.5em;
+}

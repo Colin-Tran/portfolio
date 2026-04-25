@@ -43,6 +43,7 @@
     {
         "title": "DSC 10 Midterm Project -- An Analysis into Taylor Swift's Music",
         "description": "Analyzed a dataset of Taylor Swift songs using Spotify audio features and lyric data. Created visualizations to explore trends over time, built a song recommendation system based on audio similarity, and performed text analysis on lyrics to identify patterns and keywords.",
+        "image": null,
         "github": null,
         "live": null,
         "year": 2024
@@ -50,6 +51,7 @@
     {
         "title": "DSC 20 Final Project -- Full Image and Audio Processing System",
         "description": "Built a multimedia processing system in Python with image filters, audio effects, and a KNN-based image classifier using object-oriented design. Developed a Python-based multimedia processing system supporting image manipulation, audio transformations, and machine learning classification. Implemented object-oriented designs for RGB image handling, applied filters such as grayscale, edge detection, and pixelation, and built a KNN classifier for image recognition. Extended functionality to audio processing including reverb, speed adjustments, and signal transformations.",
+        "image": null,
         "github": null,
         "live": null,
         "year": 2025
@@ -57,6 +59,7 @@
     {
         "title": "DSC 80 Project 1 -- Course Grade Analysis & Statistical Modeling",
         "description": "Developed a data analysis pipeline in Python using pandas to model a full course grading system. Implemented weighted grade calculations, lateness penalties, and score normalization, and applied statistical methods (z-scores) to simulate grade redemption policies. Performed section-level analysis, ranked student performance, and visualized grade distributions using heatmaps.",
+        "image": null,
         "github": null,
         "live": null,
         "year": 2025
@@ -64,13 +67,15 @@
     {
         "title": "DSC 80 Project 2 -- Loan Data Analysis & Financial Modeling System",
         "description": "Developed a data analysis pipeline in Python using pandas to analyze loan datasets and model financial outcomes. Cleaned and transformed data, computed correlations, and performed hypothesis testing using permutation tests. Implemented federal and state tax systems to calculate disposable income, integrated multiple datasets, and detected statistical phenomena such as Simpson’s paradox through grouped analysis.",
+        "image": null,
         "github": null,
         "live": null,
-    "year": 2025
+        "year": 2025
     },
     {
         "title": "DSC 80 Project 3 -- Language Modeling & Text Generation System",
         "description": "Developed a natural language processing system in Python to model and generate text using probabilistic methods. Implemented uniform, unigram, and n-gram language models, computed word sequence probabilities, and generated text through sampling. Built custom tokenization and preprocessing pipelines and applied web scraping techniques to collect training data from Project Gutenberg.",
+        "image": null,
         "github": null,
         "live": null,
         "year": 2026

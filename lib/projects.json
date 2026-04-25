@@ -1,0 +1,94 @@
+[
+    {
+        "title": "Tower Defense Game",
+        "description": "Developed a tower defense game featuring core gameplay mechanics such as enemy waves,\n        player defenses, and strategic placement. Focused on implementing game logic, object-oriented\n        design, and interactive gameplay systems.",
+        "image": "../images/tower_defense.gif",
+        "github": "https://github.com/Colin-Tran/TowerDefenseGame",
+        "live": null,
+        "year": 2022
+    },
+    {
+        "title": "DSC 80 Final Project --League of Legends -- An Objectives Analysis",
+        "description": "For this project, I analyzed the importance of objectives in League of Legends. I used data from the Riot Games Esports to analyze the relationship between different objectives\n            and objective control with winning. I found that teams that secure more objectives tend to win more often, highlighting the strategic importance of objectives in the game.",
+        "image": "../images/DSC80Final.png",
+        "github": "https://github.com/Colin-Tran/LeagueOfLegends-Objectives-Analysis",
+        "live": null,
+        "year": 2026
+    },
+    {
+        "title": "SoCal Guesser",
+        "description": "Built a convolutional neural network (CNN) to classify images by different Southern Californian (socal) cities,\n        including San Diego, Los Angeles, SLO, Bakersfield, Riverside, and Anaheim. The model\n        learns visual features from city landscapes and predicts correct location based on\n        patterns the CNN identifiessuch as environment, architecture, and scenery.",
+        "image": "../images/socalGuesser.png",
+        "github": "https://github.com/Colin-Tran/socal-guesser-cnn.git",
+        "live": null,
+        "year": 2026
+    },
+    {
+        "title": "Asteroids Game Remake",
+        "description": "Recreated the classic arcade game Asteroids in Java, implementing core gameplay mechanics such as player movement, shooting, asteroid collisions, and scoring. Designed a hitbox system for accurate collision detection and built a round and life system to manage game progression. Focused on object-oriented design and real-time game logic.",
+        "image": "../images/controlGif.gif",
+        "github": null,
+        "live": null,
+        "year": 2022
+    },
+
+    {
+        "title": "DSC 10 Final Project -- An Analysis into the TV show Friends",
+        "description": "Performed exploratory data analysis on Friends datasets to evaluate episode ratings, director performance, and character dialogue patterns. Used bootstrapping and statistical inference to guide decisions for a hypothetical reboot strategy.",
+        "image": "../images/DSC10Final.png",
+        "github": null,
+        "live": null,
+        "year": 2024
+    },
+    {
+        "title": "DSC 10 Midterm Project -- An Analysis into Taylor Swift's Music",
+        "description": "Analyzed a dataset of Taylor Swift songs using Spotify audio features and lyric data. Created visualizations to explore trends over time, built a song recommendation system based on audio similarity, and performed text analysis on lyrics to identify patterns and keywords.",
+        "github": null,
+        "live": null,
+        "year": 2024
+    },
+    {
+        "title": "DSC 20 Final Project -- Full Image and Audio Processing System",
+        "description": "Built a multimedia processing system in Python with image filters, audio effects, and a KNN-based image classifier using object-oriented design. Developed a Python-based multimedia processing system supporting image manipulation, audio transformations, and machine learning classification. Implemented object-oriented designs for RGB image handling, applied filters such as grayscale, edge detection, and pixelation, and built a KNN classifier for image recognition. Extended functionality to audio processing including reverb, speed adjustments, and signal transformations.",
+        "github": null,
+        "live": null,
+        "year": 2025
+    },
+    {
+        "title": "DSC 80 Project 1 -- Course Grade Analysis & Statistical Modeling",
+        "description": "Developed a data analysis pipeline in Python using pandas to model a full course grading system. Implemented weighted grade calculations, lateness penalties, and score normalization, and applied statistical methods (z-scores) to simulate grade redemption policies. Performed section-level analysis, ranked student performance, and visualized grade distributions using heatmaps.",
+        "github": null,
+        "live": null,
+        "year": 2025
+    },
+    {
+        "title": "DSC 80 Project 2 -- Loan Data Analysis & Financial Modeling System",
+        "description": "Developed a data analysis pipeline in Python using pandas to analyze loan datasets and model financial outcomes. Cleaned and transformed data, computed correlations, and performed hypothesis testing using permutation tests. Implemented federal and state tax systems to calculate disposable income, integrated multiple datasets, and detected statistical phenomena such as Simpson’s paradox through grouped analysis.",
+        "github": null,
+        "live": null,
+    "year": 2025
+    },
+    {
+        "title": "DSC 80 Project 3 -- Language Modeling & Text Generation System",
+        "description": "Developed a natural language processing system in Python to model and generate text using probabilistic methods. Implemented uniform, unigram, and n-gram language models, computed word sequence probabilities, and generated text through sampling. Built custom tokenization and preprocessing pipelines and applied web scraping techniques to collect training data from Project Gutenberg.",
+        "github": null,
+        "live": null,
+        "year": 2026
+    },
+    {
+        "title": "Wix Portfolio Website (for Graphic Design Class)",
+        "description": "Developed a personal portfolio website using wix to showcase high school projects.",
+        "image": "../images/wix_website.png",
+        "link": "https://colintran04.wixsite.com/portfolio",
+        "live": null,
+        "year": 2022
+    },
+    {
+        "title": "This portfolio website for DSC 106!",
+        "description": "Developed a personal portfolio website using HTML, CSS, and JavaScript to showcase projects and experience. Implemented responsive layouts using CSS Grid, dynamic content rendering from JSON data, and reusable JavaScript functions. Integrated features such as dark mode, automated navigation, and GitHub API data to create an interactive and data-driven user experience.",
+        "image": "../images/personal_website.png",
+        "github": null,
+        "live": null,
+        "year": 2026
+    }
+]

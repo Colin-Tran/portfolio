@@ -209,3 +209,30 @@ h6 {
   gap: 2em;              
 }
 
+/* Interactive Pie Chart */
+
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+path.selected {
+  fill: var(--color);
+}
+
+.legend-item.selected {
+  font-weight: bold;
+}
+
+.legend-item.selected .swatch {
+  background-color: var(--color);
+}

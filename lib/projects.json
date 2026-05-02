@@ -16,7 +16,7 @@
         "year": 2026
     },
     {
-        "title": "SoCal Guesser",
+        "title": "DSC 140B Project -- SoCal Guesser",
         "description": "Built a convolutional neural network (CNN) to classify images by different Southern Californian (socal) cities,\n        including San Diego, Los Angeles, SLO, Bakersfield, Riverside, and Anaheim. The model\n        learns visual features from city landscapes and predicts correct location based on\n        patterns the CNN identifiessuch as environment, architecture, and scenery.",
         "image": "../images/socalGuesser.png",
         "github": "https://github.com/Colin-Tran/socal-guesser-cnn.git",

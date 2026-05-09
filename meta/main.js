@@ -138,13 +138,14 @@ function renderScatterPlot(data, commits) {
     .attr('r', 5)
     .attr('fill', 'steelblue')
     .on('mouseenter', (event, commit) => {
-    renderTooltipContent(commit);
+      renderTooltipContent(commit);
+      updateTooltipVisibility(true);
+      updateTooltipPosition(event);
     })
     .on('mouseleave', () => {
-    // TODO: Hide the tooltip
-    renderTooltipContent({});
+      updateTooltipVisibility(false);
     });
-}
+  }
 
 function renderTooltipContent(commit) {
   const link = document.getElementById('commit-link');
@@ -167,9 +168,19 @@ function renderTooltipContent(commit) {
   author.textContent = commit.author;
 
   lines.textContent = commit.totalLines;
-  
+
 }
 
+function updateTooltipVisibility(isVisible) {
+  const tooltip = document.getElementById('commit-tooltip');
+  tooltip.hidden = !isVisible;
+}
+
+function updateTooltipPosition(event) {
+  const tooltip = document.getElementById('commit-tooltip');
+  tooltip.style.left = `${event.clientX}px`;
+  tooltip.style.top = `${event.clientY}px`;
+}
 
 let data = await loadData();
 let commits = processCommits(data);

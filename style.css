@@ -237,6 +237,43 @@ path.selected {
   background-color: var(--color);
 }
 
+
+.stats {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+
+  margin-block: 2rem;
+  padding: 1.5rem;
+
+  background: #f3f3f3;
+  border-radius: 1rem;
+}
+
+.stats dt {
+  grid-row: 1;
+
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.stats dd {
+  grid-row: 2;
+
+  margin: 0;
+
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
 /* Gridlines for the commit chart */
 .gridlines line {
   stroke: lightgray;

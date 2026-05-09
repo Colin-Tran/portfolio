@@ -38,7 +38,39 @@ function processCommits(data) {
     });
 }
 
+function renderCommitInfo(data, commits) {
+  // Create the dl element
+  const dl = d3.select('#stats').append('dl').attr('class', 'stats');
+
+  // Add total LOC
+  dl.append('dt').html('Total <abbr title="Lines of code">LOC</abbr>');
+  dl.append('dd').text(data.length);
+
+  // Add total commits
+  dl.append('dt').text('Total commits');
+  dl.append('dd').text(commits.length);
+
+  // Add more stats as needed...
+  const numFiles = d3.group(data, (d) => d.file).size;
+  dl.append('dt').text('Files');
+  dl.append('dd').text(numFiles);
+
+  const maxDepth = d3.max(data, d => d.depth);
+  dl.append('dt').text('Maximum depth');
+  dl.append('dd').text(maxDepth);
+  
+  const avgLineLength = d3.mean(data, (d) => d.length);
+  dl.append('dt').text('Average line length');
+  dl.append('dd').text(avgLineLength.toFixed(1));
+
+  const daysWorked = d3.group(data, (d) => d.date).size;
+  dl.append('dt').text('Days worked');
+  dl.append('dd').text(daysWorked);
+}
+    
 let data = await loadData();
 let commits = processCommits(data);
 
 console.log(commits);
+
+renderCommitInfo(data, commits);

@@ -236,3 +236,24 @@ path.selected {
 .legend-item.selected .swatch {
   background-color: var(--color);
 }
+
+/* Gridlines for the commit chart */
+.gridlines line {
+  stroke: lightgray;
+  stroke-opacity: 0.3;
+  shape-rendering: crispEdges;
+}
+
+.gridlines path {
+  display: none;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}

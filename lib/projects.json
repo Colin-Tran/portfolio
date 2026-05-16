@@ -95,5 +95,13 @@
         "github": null,
         "live": null,
         "year": 2026
+    },
+    {
+        "title": "Bike Pathing and Traffic Visualization",
+        "description": "Interactive visualization of Bluebikes traffic patterns across Boston and Cambridge using Mapbox and D3.",
+        "image": "../images/bike_proj.png",
+        "github": "https://github.com/Colin-Tran/bikewatching.git",
+        "live": "https://colin-tran.github.io/bikewatching/",
+        "year": 2026
     }
 ]

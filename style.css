@@ -3,7 +3,7 @@ body {
 	   and use the OS’s UI font as the website font
 	 */ 
   font: 100%/1.5 system-ui;
-  max-width: 100ch;
+  max-width: 140ch;
   margin-inline: auto;
   padding: 4em;
   accent-color: var(--color-accent);
@@ -427,7 +427,7 @@ circle.selected {
     align-items: start;
     align-content: start;
     gap: 0.15em;
-    padding-top: 0 em;
+    padding-top: 0em;
     margin-left: 0;
   }
 }
@@ -455,4 +455,46 @@ circle.selected {
 .swatch {
   border: none;
   outline: none;
+}
+
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+
+  > * {
+    flex: 1;
+  }
+}
+
+#scatter-story {
+  position: relative;
+}
+
+#scatter-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 90vh;
+}
+
+#chart svg {
+  width: 100%;
+  height: auto;
+}
+
+.step {
+  margin-bottom: 30vh;
+}
+
+#file-scrolly {
+  display: flex;
+  gap: 2rem;
+}
+
+#file-viz {
+  position: sticky;
+  top: 1rem;
+  height: 90vh;
 }

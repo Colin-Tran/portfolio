@@ -1,4 +1,6 @@
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm';
+import scrollama from 'https://cdn.jsdelivr.net/npm/scrollama@3.2.0/+esm';
+
 
 let xScale;
 let yScale;
@@ -348,7 +350,9 @@ function renderLanguageBreakdown(selection) {
 let colors = d3.scaleOrdinal(d3.schemeTableau10);
 
 let data = await loadData();
-let commits = processCommits(data);
+let commits = processCommits(data).sort(
+  (a, b) => a.datetime - b.datetime
+);
 
 let commitProgress = 100;
 let filteredCommits = commits;
@@ -436,3 +440,60 @@ for (const [type, color] of colors.domain().map(t => [t, colors(t)])) {
     ${type}
   `);
 }
+
+
+d3.select('#scatter-story')
+  .selectAll('.step')
+  .data(commits)
+  .join('div')
+  .attr('class', 'step')
+  .html(
+    (d, i) => `
+      <p>
+        On ${d.datetime.toLocaleString('en', {
+          dateStyle: 'full',
+          timeStyle: 'short',
+        })},
+        I made <a href="${d.url}" target="_blank">${
+          i > 0 ? 'another commit' : 'my first commit'
+        }</a>.
+      </p>
+
+      <p>
+        I edited ${d.totalLines} lines across ${
+          d3.rollups(
+            d.lines,
+            (D) => D.length,
+            (line) => line.file,
+          ).length
+        } files.
+      </p>
+    `,
+  );
+
+function onStepEnter(response) {
+  console.log(response.element.__data__.datetime);
+  const commit = response.element.__data__;
+
+  commitMaxTime = commit.datetime;
+  commitSlider.value = timeScale(commitMaxTime);
+
+  commitTime.textContent = commitMaxTime.toLocaleString('en-US', {
+    dateStyle: 'long',
+    timeStyle: 'short',
+  });
+
+  filteredCommits = commits.filter((d) => d.datetime <= commitMaxTime);
+
+  updateScatterPlot(data, filteredCommits);
+  updateFileDisplay(filteredCommits);
+}
+
+const scroller = scrollama();
+
+scroller
+  .setup({
+    container: '#scrolly-1',
+    step: '#scrolly-1 .step',
+  })
+  .onStepEnter(onStepEnter);

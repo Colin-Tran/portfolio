@@ -23,27 +23,33 @@
 
     </label>
   </div>
-    <dl id="files">
-      <!-- we want the following structure for each file:
-      <div>
-        <dt>
-          <code>{file.name}</code>
-        </dt>
-        <dd>{file.lines.length} lines</dd>
-      </div>
-      -->
-    </dl>
-  <ul class="legend"></ul>
+
   
+  <div id="scrolly-1">
+    <div id="scatter-story">
+      <p></p>
+    </div>
+
+    <div id="scatter-plot">
+      <h2>Commits by time of day</h2>
+      <div id="chart"></div>
+
+      <p id="selection-count">No commits selected</p>
+      <dl id="language-breakdown" class="stats"></dl>
+    </div>
+    
+    <div id="file-scrolly">
+    <div id="file-story"></div>
+
+    <div id="file-viz">
+      <dl id="files"></dl>
+      <ul class="legend"></ul>
+    </div>
+  </div>
+
+  </div>
+
   <div id="stats"></div>
-
-  <p>
-    This page contains visualizations and statistics about my project codebase,
-    including file structure, code metrics, and commit history.
-  </p>
-
-  <h2>Commits by time of day</h2>
-  <div id="chart"></div>
 
   <dl id="commit-tooltip" class="info tooltip" hidden>
     <dt>Commit</dt>
@@ -65,10 +71,6 @@
     <dt>Lines edited</dt>
     <dd id="commit-lines"></dd>
   </dl>
-
-  <p id="selection-count">No commits selected</p>
-
-  <dl id="language-breakdown" class="stats"></dl>
 
 </body>
 </html>

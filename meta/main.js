@@ -234,7 +234,7 @@ function updateScatterPlot(data, commits) {
 function renderTooltipContent(commit) {
   const link = document.getElementById('commit-link');
   const date = document.getElementById('commit-date');
-  const time = document.getElementById('commit-time');
+  const time = document.getElementById('commit-tooltip-time');
   const author = document.getElementById('commit-author');
   const lines = document.getElementById('commit-lines');
 
@@ -345,6 +345,7 @@ function renderLanguageBreakdown(selection) {
   }
 }
 
+let colors = d3.scaleOrdinal(d3.schemeTableau10);
 
 let data = await loadData();
 let commits = processCommits(data);
@@ -363,28 +364,36 @@ function updateFileDisplay(filteredCommits) {
     })
     .sort((a, b) => b.lines.length - a.lines.length);
 
-    
+      
   let filesContainer = d3
     .select('#files')
     .selectAll('div')
     .data(files, (d) => d.name)
-    .join((enter) =>
-      enter.append('div').call((div) => {
-        div.append('dt').append('code');
-        div.append('dd');
-      })
+    .join(
+      (enter) =>
+        enter.append('div').call((div) => {
+          let dt = div.append('dt');
+
+          dt.append('code');
+          dt.append('small');
+
+          div.append('dd');
+        }),
     );
 
-  filesContainer.select('dt > code').text((d) => d.name);
-  filesContainer.select('dd').text((d) => `${d.lines.length} lines`);
+    filesContainer.select('dt > code').text((d) => d.name);
+    filesContainer
+    .select('dt > small')
+    .text((d) => `${d.lines.length} lines`);
 
-  filesContainer
-  .select('dd')
-  .selectAll('div')
-  .data((d) => d.lines)
-  .join('div')
-  .attr('class', 'loc');
-}
+    filesContainer
+    .select('dd')
+    .selectAll('div')
+    .data((d) => d.lines)
+    .join('div')
+    .attr('class', 'loc')
+    .attr('style', (d) => `--color: ${colors(d.type)}`);
+  }
 
 let timeScale = d3
   .scaleTime()
@@ -418,3 +427,12 @@ renderScatterPlot(data, commits);
 
 commitSlider.addEventListener('input', onTimeSliderChange);
 onTimeSliderChange();
+
+const legend = d3.select('.legend');
+
+for (const [type, color] of colors.domain().map(t => [t, colors(t)])) {
+  legend.append('li').html(`
+    <span class="swatch" style="background:${color}"></span>
+    ${type}
+  `);
+}

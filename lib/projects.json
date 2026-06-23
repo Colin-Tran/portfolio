@@ -105,7 +105,7 @@
         "year": 2026
     },
     {
-    "title": "Police Accountability and Persuasive Data Visualization",
+    "title": "DSC 106 Project 2 --Police Accountability and Persuasive Data Visualization",
     "description": "Created a data visualization project examining whether police officers with extensive complaint histories face greater or fewer repercussions than typical officers. Designed and compared opposing visual narratives using the same dataset, demonstrating how choices such as aggregation, normalization, binning, color, and chart design can influence interpretation and support different conclusions.",
     "image": "../images/dsc106_proj2.png",
     "github": "https://github.com/Colin-Tran/DSC106_Project2",
@@ -113,7 +113,7 @@
     "year": 2026
     },
     {
-        "title": "Exploring Pedestrian Safety and Walkability in Downtown San Diego -- DSC 106 Final Project",
+        "title": "DSC 106 Final Project -- Exploring Pedestrian Safety and Walkability in Downtown San Diego",
         "description": "Interactive geospatial visualization combining crime, walkability, and streetlight infrastructure data to evaluate route safety across Downtown San Diego. Simulated route choices based on safety and walkability metrics, providing insights into pedestrian-friendly paths and areas of concern; awarded one of the 'Best Projects'in the UCSD DSC 106 Final Project Showcase.",
         "image": "images/dsc106Final.png",
         "github": "https://github.com/Colin-Tran/dsc106-spr26-finalproject-SD_Route_Choice",

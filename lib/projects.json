@@ -109,7 +109,7 @@
         "year": "2026",
         "image": "images/safepath.png",
         "description":
-            "Interactive geospatial visualization combining crime, walkability, and streetlight infrastructure data to evaluate route safety across Downtown San Diego. Simulated route choices based on safety and walkability metrics, providing insights into pedestrian-friendly paths and areas of concern.",
+            "Interactive geospatial visualization combining crime, walkability, and streetlight infrastructure data to evaluate route safety across Downtown San Diego. Simulated route choices based on safety and walkability metrics, providing insights into pedestrian-friendly paths and areas of concern; awarded one of the 'Best Projects'in the UCSD DSC 106 Final Project Showcase.",
         "url": "https://colin-tran.github.io/dsc106-spr26-finalproject-SD_Route_Choice/"
     }
 ]

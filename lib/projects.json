@@ -103,5 +103,13 @@
         "github": "https://github.com/Colin-Tran/bikewatching.git",
         "live": "https://colin-tran.github.io/bikewatching/",
         "year": 2026
+    },
+    {
+        "title": "Exploring Pedestrian Safety and Walkability in Downtown San Diego",
+        "year": "2026",
+        "image": "images/safepath.png",
+        "description":
+            "Interactive geospatial visualization combining crime, walkability, and streetlight infrastructure data to evaluate route safety across Downtown San Diego. Simulated route choices based on safety and walkability metrics, providing insights into pedestrian-friendly paths and areas of concern.",
+        "url": "https://colin-tran.github.io/dsc106-spr26-finalproject-SD_Route_Choice/"
     }
 ]
